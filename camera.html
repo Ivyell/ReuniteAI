@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Feed - ReuniteAI</title>
+  <link rel="stylesheet" href="camera_styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Missing Child Portal</h1>
+
+    <!-- Camera Matching Section -->
+    <section class="section" id="cameraMatchingSection">
+      <h2>Camera Feed</h2>
+      <div id="cameraContainer">
+        <video id="cameraFeed" autoplay></video>
+      </div>
+      <div id="matchResult"></div>
+    </section>
+
+    <!-- Missing Child Form -->
+    <section class="section">
+      <form id="childForm">
+        <label for="location">Last Seen Location:</label>
+        <input type="text" id="location" placeholder="Enter location" required />
+
+        <label for="marks">Distinguishing Marks:</label>
+        <textarea id="marks" placeholder="Enter distinguishing marks" rows="3" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="registrationMessage"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
